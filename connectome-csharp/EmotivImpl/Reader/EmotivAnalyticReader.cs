@@ -1,15 +1,11 @@
 ﻿using EmotivWrapper.Core;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using EmotivWrapper;
-using System.Diagnostics;
 using System.Timers;
 using EmotivWrapperInterface;
 
-namespace EmotivImpl.Reader
+namespace EmotivImpl
 {
     /// <summary>
     /// Calls OnRead every given interval and returns a state with power of the percentage 
