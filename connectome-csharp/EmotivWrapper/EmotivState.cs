@@ -1,4 +1,5 @@
-﻿using EmotivWrapperInterface;
+﻿using Emotiv;
+using EmotivWrapperInterface;
 
 namespace EmotivWrapper
 {

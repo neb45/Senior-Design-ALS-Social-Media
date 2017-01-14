@@ -22,7 +22,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\connectome-unity\Assets\Library\</OutputPath>
+    <OutputPath>..\build\Debug\</OutputPath>
     <BaseIntermediateOutputPath>.\DotNetEmotivSDK</BaseIntermediateOutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>

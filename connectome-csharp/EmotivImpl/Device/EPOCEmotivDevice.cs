@@ -1,11 +1,15 @@
 ﻿using Emotiv;
 using EmotivWrapper.Core;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using EmotivWrapper;
 using System.Diagnostics;
 using EmotivWrapperInterface;
 
-namespace EmotivImpl
+namespace EmotivImpl.Device
 {
     public class EPOCEmotivDevice : EmotivDevice
     {
@@ -116,7 +120,7 @@ namespace EmotivImpl
                 }
                 else
                 {
-                    errorMessage = ("Loading failed: either USB not connected or profile  \'" + profileName + "\' doesn't exist");
+                    errorMessage = ("Loading failed");
                     EmotivCloudClient.EC_Logout(userCloudID);
                     return false;
                 }
@@ -131,7 +135,7 @@ namespace EmotivImpl
             EdkDll.IEE_MentalCommandGetOverallSkillRating(engineUserID, out skill);
             //Debug.WriteLine("Current overall skill rating: " + skill);
 
-            errorMessage = "Profile " + profileName + " was loaded and device connected!";
+            errorMessage = string.Empty;
 
             return true; 
         }
